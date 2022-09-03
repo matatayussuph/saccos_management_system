@@ -131,7 +131,7 @@
           <a href="cart" class="footer-nav__link">View cart</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">View your lookbook</a>
+          <a href="#" class="footer-nav__link">View lookbook</a>
         </li>
         <li class="footer-nav__item">
           <a href="#" class="footer-nav__link">Track an order</a>
@@ -260,60 +260,97 @@
               <h4 class="modal-title"><b>Register New Saccos</b></h4>
             </div>
             <div class="modal-body">
-              <form class="form-horizontal" method="POST" action="users_add.php" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="email" class="col-sm-3 control-label">Email</label>
-
-                    <div class="col-sm-9">
-                      <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="password" class="col-sm-3 control-label">Password</label>
-
-                    <div class="col-sm-9">
-                      <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
-                </div>
-                <div class="form-group">
+              <form class="form-horizontal" method="" action="" enctype="multipart/form-data">
+              <div class="form-group">
                     <label for="firstname" class="col-sm-3 control-label">Firstname</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="firstname" name="firstname" required>
+                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="please enter firstname" required>
+                    </div>
+                </div>                
+                <div class="form-group">
+                    <label for="Middlename" class="col-sm-3 control-label">Middlename</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="Middlename" name="Middlename" placeholder="please enter middlename" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="lastname" class="col-sm-3 control-label">Lastname</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="lastname" name="lastname" required>
+                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="please enter lastname" required>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+
+                    <div class="col-sm-9">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="please enter email" required>
+                    </div>
+                </div>                
+                <div class="form-group">
+                    <label for="Location" class="col-sm-3 control-label">Location</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="Location" name="Location" placeholder="please enter location" required>
+                    </div>
+                </div>       
+                
                 <div class="form-group">
                     <label for="address" class="col-sm-3 control-label">Address</label>
 
                     <div class="col-sm-9">
-                      <textarea class="form-control" id="address" name="address"></textarea>
+                      <textarea class="form-control" id="address" name="address" placeholder="please enter address" required></textarea>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="contact" class="col-sm-3 control-label">Contact Info</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="contact" name="contact">
+                      <input type="text" class="form-control" id="contact" name="contact" placeholder="please enter contact" required>
+                    </div>
+                </div>       
+                <div class="form-group">
+                    <label for="SaccosName" class="col-sm-3 control-label">Saccos Name</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="SaccosName" name="SaccosName" placeholder="please enter name" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="photo" class="col-sm-3 control-label">Photo</label>
+                    <label for="BranchName" class="col-sm-3 control-label">Branch Name</label>
 
                     <div class="col-sm-9">
-                      <input type="file" id="photo" name="photo">
+                      <input type="text" class="form-control" id="BranchName" name="BranchName" placeholder="please enter branch" required>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="RegNo" class="col-sm-3 control-label">Registration Number</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="RegNo" name="RegNo" placeholder="please enter reg no." required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Logo" class="col-sm-3 control-label">Logo (optional)</label>
+
+                    <div class="col-sm-9">
+                      <input type="file" id="Logo" name="Logo">
+                    </div>
+                </div>                
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" id="password" name="password" placeholder="please enter password" required>
+                    </div>
+                </div>
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
-              <button type="submit" class="btn btn-primary btn-flat" name="add"><i class="fa fa-save"></i> Save</button>
+              <button type="submit" class="btn btn-primary btn-flat" name="Register"><i class="fa fa-save"></i> Save</button>
               </form>
             </div>
         </div>
@@ -328,57 +365,57 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Login To Sacos</b></h4>
+              <h4 class="modal-title"><b>Login To Saccos</b></h4>
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="users_edit.php">
                 <input type="hidden" class="userid" name="id">
                 <div class="form-group">
-                    <label for="edit_email" class="col-sm-3 control-label">Email</label>
+                    <label for="email" class="col-sm-3 control-label">Email</label>
 
                     <div class="col-sm-9">
-                      <input type="email" class="form-control" id="edit_email" name="email">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="please enter email" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="edit_password" class="col-sm-3 control-label">Password</label>
+                    <label for="password" class="col-sm-3 control-label">Password</label>
 
                     <div class="col-sm-9">
-                      <input type="password" class="form-control" id="edit_password" name="password">
+                      <input type="password" class="form-control" id="password" name="password" placeholder="please enter password" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="edit_firstname" class="col-sm-3 control-label">Firstname</label>
+                    <label for="Firstname" class="col-sm-3 control-label">Firstname</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_firstname" name="firstname">
+                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="please enter firstname" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="edit_lastname" class="col-sm-3 control-label">Lastname</label>
+                    <label for="lastname" class="col-sm-3 control-label">Lastname</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_lastname" name="lastname">
+                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="please enter lastname" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="edit_address" class="col-sm-3 control-label">Address</label>
+                    <label for="saccosId" class="col-sm-3 control-label" required>saccos Identity Number</label>
 
                     <div class="col-sm-9">
-                      <textarea class="form-control" id="edit_address" name="address"></textarea>
+                      <input type="text" class="form-control" id="saccosId" name="saccosId" placeholder="please enter saccos Id no." required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="edit_contact" class="col-sm-3 control-label">Contact Info</label>
+                    <label for="Role" class="col-sm-3 control-label">Role</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_contact" name="contact">
+                      <textarea class="form-control" id="Role" name="Role" placeholder="please enter role" required></textarea>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
-              <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Login</button>
+              <button type="submit" class="btn btn-success btn-flat" name="Login"><i class="fa fa-check-square-o"></i> Login</button>
               </form>
             </div>
         </div>
