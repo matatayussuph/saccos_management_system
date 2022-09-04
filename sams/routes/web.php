@@ -12,12 +12,22 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//
+//Route::get('/', function () {
+//    return Inertia::render('Welcome', [
+//        'canLogin' => Route::has('login'),
+//        'canRegister' => Route::has('register'),
+//        'laravelVersion' => Application::VERSION,
+//        'phpVersion' => PHP_VERSION,
+//    ]);
+//});
+//
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware([
+/* Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
@@ -25,7 +35,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-});
+}); */
 
 ///////////////////to be modified
 Route::get('/dashboard', function () {
@@ -49,3 +59,19 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/email/resend', 'VerificationController@resend')->name('verification.resend');
   
 });
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+
+    Route::get('dashboard', '\App\Http\Controllers\HomeController@index');
+});
+//=======
+//    Route::get('/dashboard', function () {
+//        return Inertia::render('Dashboard');
+//    })->name('dashboard');
+//});
+
+Route::get('create', '\App\Http\Controllers\ClerksController@create')->name("create");
+Route::get('createUser', '\App\Http\Controllers\ManagerController@create')->name("createUser");
