@@ -27,6 +27,18 @@ Route::middleware([
     })->name('dashboard');
 });
 
+///////////////////to be modified
+Route::get('/dashboard', function () {
+    return view('dashboard');//partially added by richard -> not secure
+});
+Route::get('/terms', function () {
+    return view('terms');//partially added by richard -> not secure
+});
+Route::get('/policy', function () {
+    return view('policy');//partially added by richard -> not secure
+});
+///////////////////
+
 Route::group(['middleware' => ['auth']], function() {
 
     /**
