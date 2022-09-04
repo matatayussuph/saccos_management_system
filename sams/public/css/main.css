@@ -202,6 +202,7 @@ li{
     border-radius: 50%;    
     background-color: dodgerblue !important;
     box-shadow: 0 0 5px black;
+    color: #fff !important;
 }
 .fixed-croller{
     position: fixed !important;

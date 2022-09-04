@@ -59,14 +59,14 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/email/resend', 'VerificationController@resend')->name('verification.resend');
   
 });
-Route::middleware([
+/* Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
 
     Route::get('dashboard', '\App\Http\Controllers\HomeController@index');
-});
+}); */
 //=======
 //    Route::get('/dashboard', function () {
 //        return Inertia::render('Dashboard');

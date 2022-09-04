@@ -12,6 +12,7 @@
 
         <!-- FontAwesome -->
         <link href="{{ asset('fontawesome/css/all.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}">
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         <!-- Theme style -->
@@ -20,33 +21,6 @@
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     </head>
     <body>
-      <!-- template default elements follow -->
-        <!-- <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div> -->
         <div class="body-large" id="body-large">
             <header class="body-header">
                 <nav class="nav header-nav">
@@ -198,16 +172,16 @@
 
     <div class="banner-social">
       <a href="#" class="banner-social__link">
-      <i class="icon-facebook">facebook</i>
+      <i class="fab fa-facebook">facebook</i>
     </a>
       <a href="#" class="banner-social__link">
-      <i class="icon-twitter">twitter</i>
+      <i class="fab fa-twitter">twitter</i>
     </a>
       <a href="#" class="banner-social__link">
-      <i class="icon-instagram">instagram</i>
+      <i class="fab fa-instagram">instagram</i>
     </a>
       <a href="#" class="banner-social__link">
-      <i class="icon-pinterest-circled">pinterest</i>
+      <i class="fab fa-pinterest">pinterest</i>
     </a>
     <br>    
     <a href="#" class="banner-social__link">
@@ -246,6 +220,36 @@
     </i>
 </button>
 </div>
+
+
+
+        <!-- template default elements follow -->
+        <!-- <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endauth
+                </div>
+            @endif
+
+            <div class="content">
+                <div class="title m-b-md">
+                    Laravel
+                </div>
+
+                <div class="links">
+                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div>
+            </div>
+        </div> -->
 
         <!-- the two forms down here -->
         <div class="modal fade" id="addnew">
